@@ -1,4 +1,8 @@
 This repository contains all the code examples from "The Little Prover" book.
+The Little Prover teaches the readers how to determine facts about recursive
+functions using induction. The book starts with programming concepts such as
+recursive functions and lists, and leads the reader along the shortest path
+to inductive proofs.
 
 If you're interested, get the book from Amazon: http://amzn.to/1I4JnqC
 
