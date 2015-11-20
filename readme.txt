@@ -2,6 +2,10 @@ This repository contains all the code examples from "The Little Prover" book.
 
 If you're interested, get the book from Amazon: http://amzn.to/1I4JnqC
 
+While working through this book, you'll need j-bob, the proof assistant:
+
+https://github.com/the-little-prover/j-bob
+
 The code examples were copied (and completed where necessary) from
 "The Little Prover" by Peteris Krumins (peter@catonmat.net).
 
