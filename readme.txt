@@ -26,5 +26,50 @@ Table of contents:
 
 See 01-old-games-new-rules.ss file for code examples.
 
+Chapter 1 introduces axioms and theorems. An axiom is a basic assumption that
+is presumed to be true. A theorem is an expression that is always true. Axioms
+are theorems that are assumed to be true, whereas other theorems must be shown
+to be true.
+
+.------------------------------------.
+| The Axioms of Cons (initial)       |
+`------------------------------------'
+|                                    |
+| (dethm atom/cons (x y)             |
+|  (equal (atom (cons x y)) 'nil))   |
+|                                    |
+| (dethm car/cons (x y)              |
+|  (equal (car (cons x y)) x))       |
+|                                    |
+| (dethm cdr/cons (x y)              |
+|  (equal (cdr (cons x y)) y))       |
+`------------------------------------'
+
+.------------------------------------.
+| The Axioms of Equal (initial)      |
+`------------------------------------'
+|                                    |
+| (dethm equal-same (x)              |
+|   (equal (equal x x) 't))          |
+|                                    |
+| (dethm equal-swap (x y)            |
+|   (equal (equal x y) (equal y x))) |
+`------------------------------------'
+
+What does dethm mean? It means define a theorem.
+
+.---
+| The Law of Dethm (initial)
+`---
+|
+| For any theorem (dethm name (x1 ... xn  ) bodyx), the variables x1 ... xn
+| in bodyx can be replaced with any corresponding expressions e1 ... en .
+| The result, bodye, can be used to rewrite a focus p to become q provided
+| body e is either (equal p q) or (equal q p).
+|
+`----
+
+
+
 [02]-Chapter-2----------------------------------------------------------------
 
