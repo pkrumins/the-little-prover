@@ -20,7 +20,8 @@ His blog is at http://www.catonmat.net -- good coders code, great coders reuse
 Table of contents:
     [01] Chapter  1: Old Games, New Rules
          01-old-games-new-rules.ss
-    [02] ...
+    [02] Chapter  2: Even Older Games
+         02-even-older-games.ss
 
 [01]-Chapter-1-Old-Games-New-Rules--------------------------------------------
 
@@ -71,5 +72,35 @@ What does dethm mean? It means define a theorem.
 |                                                                           |
 `---------------------------------------------------------------------------'
 
-[02]-Chapter-2----------------------------------------------------------------
+[02]-Chapter-2-Even-Older-Games-----------------------------------------------
+
+.------------------------------------.
+| The Axioms of If (initial)         |
+`------------------------------------'
+|                                    |
+| (dethm if-true (x y)               |
+|   (equal (if 't x y) x))           |
+|                                    |
+| (dethm if-false (x y)              |
+|   (equal (if 'nil x y) y))         |
+|                                    |
+| (dethm if-same (x y)               |
+|   (equal (if x y y) y))            |
+|                                    |
+`------------------------------------'
+
+.------------------------------------.
+| The Axioms of Equal (final)        |
+`------------------------------------'
+|                                    |
+| (dethm equal-same (x)              |
+|   (equal (equal x x) 't))          |
+|                                    |
+| (dethm equal-swap (x y)            |
+|   (equal (equal x y) (equal y x))) |
+|                                    |
+| (dethm equal-if (x y)              |
+|   (if (equal x y) (equal y x) 't)) |
+|                                    |
+`------------------------------------'
 
