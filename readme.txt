@@ -68,7 +68,7 @@ What does dethm mean? It means define a theorem.
 | For any theorem (dethm name (x1 ... xn) bodyx), the variables x1 ... xn   |
 | in bodyx can be replaced with any corresponding expressions e1 ... en.    |
 | The result, bodye, can be used to rewrite a focus p to become q provided  |
-| body e is either (equal p q) or (equal q p).                              |
+| bodye is either (equal p q) or (equal q p).                               |
 |                                                                           |
 `---------------------------------------------------------------------------'
 
