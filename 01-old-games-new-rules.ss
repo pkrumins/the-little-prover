@@ -124,3 +124,8 @@
 
 ; let's fortify ourselves with two helpings of our favorite breakfast
 
+;
+; Go get yourself this wonderful book and have fun with proofs!
+;
+; The Little Prover on Amazon.com: http://amzn.to/1I4JnqC
+;
